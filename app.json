@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#272a3b",
+    "navigationBarTitleText": "早上好！ 张三先生"
+  }
+}

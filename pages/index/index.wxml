@@ -1,0 +1,200 @@
+<!--pages/index/index.wxml-->
+<view class='indexContainer'>
+<!-- 图片寻找使用绝对路径 -->
+  <view class='swiper'>
+    <image src='/images/轮播图.jpg' class='swiperImage'></image>
+  </view>
+  <view class='navbar'>
+    <view class='navbar-child'>
+      <image src='/images/icon_gray/letter.png'></image>
+      <text>功能1</text>
+    </view>
+    <view class='navbar-child'>
+      <image src='/images/icon_gray/people.png'></image>
+      <text>功能2</text>
+    </view>
+    <view class='navbar-child'>
+      <image src='/images/icon_gray/send.png'></image>
+      <text>功能3</text>
+    </view>
+    <view class='navbar-child'>
+      <image src='/images/icon_gray/setting.png'></image>
+      <text>功能4</text>
+    </view>
+    <view class='navbar-child'>
+      <image src='/images/icon_gray/letter.png'></image>
+      <text>功能5</text>
+    </view>
+  </view>
+  <view class='body-view'>
+    <view class='parent-one'>
+        <view class='child'>
+          <view class='small-logo'>
+            <view class='child-one'>
+              <image src='/images/icon_white/box.png'></image>
+            </view>
+            <view class='child-two'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-three'><image src='/images/icon_white/chart.png'></image></view>
+            <view class='child-four'><image src='/images/icon_white/letter.png'></image></view>
+          </view>
+          <view>功能A</view>
+        </view>
+        <view class='child' bindtap="showWindow">
+          <view class='small-logo'>
+            <view class='child-one'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-two'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-three'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-four'><image src='/images/icon_white/balance.png'></image></view>
+          </view>
+          <view>功能B</view>
+        </view>
+        <view class='mask' wx:if='{{show}}' bindtap="closeWindow">
+          <view class='box-view'>
+            <view class='view-header'>功能B</view>
+            <view class='view-body'>
+              <view class='one-parent'>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/box.png'></image>
+                  </view>
+                  <view>功能1</view>
+                </view>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/balance.png'></image>
+                  </view>
+                  <view>功能2</view>
+                </view>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/chart.png'></image>
+                  </view>
+                  <view>功能3</view>
+                </view>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/letter.png'></image>
+                  </view>
+                  <view>功能4</view>
+                </view>
+              </view>
+              <view class='two-parent'>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/password.png'></image>
+                  </view>
+                  <view>功能5</view>
+                </view>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/people.png'></image>
+                  </view>
+                  <view>功能6</view>
+                </view>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/right.png'></image>
+                  </view>
+                  <view>功能7</view>
+                </view>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/send.png'></image>
+                  </view>
+                  <view>功能8</view>
+                </view>
+              </view>
+              <view class='three-parent'>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/setting.png'></image>
+                  </view>
+                  <view>功能9</view>
+                </view>
+                <view class='son'>
+                  <view class='image-box'>
+                    <image src='/images/icon_white/switch.png'></image>
+                  </view>
+                  <view>功能10</view>
+                </view>
+                <view class='son'></view>
+                <view class='son'></view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='child'>
+           <view class='small-logo'>
+            <view class='child-one'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-two'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-three'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-four'><image src='/images/icon_white/balance.png'></image></view>
+          </view>
+          <view>功能C</view>
+        </view>
+        <view class='child'>
+           <view class='small-logo'>
+            <view class='child-one'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-two'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-three'><image src='/images/icon_white/balance.png'></image></view>
+            <view class='child-four'><image src='/images/icon_white/balance.png'></image></view>
+          </view>
+          <view>功能D</view>
+        </view>
+    </view>
+    <view class='parent-two'>
+        <view class='child'>
+          <view class='big-logo'>
+            <image src='/images/icon_white/box.png'></image>
+          </view>
+          <view>功能E</view>
+        </view>
+        <view class='child'>
+          <view class='big-logo'><image src='/images/icon_white/balance.png'></image></view>
+          <view>功能F</view>
+        </view>
+        <view class='child'>
+          <view class='big-logo'><image src='/images/icon_white/chart.png'></image></view>
+          <view>功能G</view>
+        </view>
+        <view class='child'>
+           <view class='big-logo'><image src='/images/icon_white/password.png'></image></view>
+          <view>功能H</view>
+        </view>
+    </view>
+    <view class='parent-three'>
+        <view class='child'>
+          <view class='big-logo'><image src='/images/icon_white/people.png'></image></view>
+          <view>功能I</view>
+        </view>
+        <view class='child'>
+           <view class='big-logo'><image src='/images/icon_white/send.png'></image></view>
+          <view>功能J</view>
+        </view>
+        <view class='child'></view>
+        <view class='child'></view>
+    </view>
+  </view>
+  <view class='footer'>
+    <view class='footer-child'>
+      <view><image src='/images/icon_gray/people.png'></image></view>
+      <view>工作</view>
+    </view>
+    <view class='footer-child'>
+      <view><image src='/images/icon_gray/letter.png'></image></view>
+      <view>助手</view>
+    </view>
+    <view class='footer-child'>
+      <view class='round'><image src='/images/icon_white/send.png'></image></view>
+      <view>常用</view>
+    </view>
+    <view class='footer-child'>
+      <view><image src='/images/icon_gray/setting.png'></image></view>
+      <view>分析</view>
+    </view>
+    <view class='footer-child'>
+      <view><image src='/images/icon_gray/people.png'></image></view>
+      <view>我</view>
+    </view>
+  </view>
+</view>
